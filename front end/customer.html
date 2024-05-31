@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer details</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    <meta name="keyword" content="html">
+    <meta name="description" content="dashboard">
+    <meta name="author" content="il=jse">
+    <meta http-equiv="refresh" content="100000">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/customer.css">
+    <link rel="stylesheet" href="lib/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.min.css">
+</head>
+<body>
+<aside>
+    <section class="aside-first-section">
+        <img src="assets/logo.png" alt="logo">
+    </section>
+
+    <section class="aside-second-section">
+        <div>
+            <button class="aside-btn">
+                <i class="fa-solid fa-house fa-xl" style="color: #B5C0D0;"></i>
+            </button>
+            <span>home</span>
+        </div>
+        <div>
+            <button class="aside-btn">
+                <i class="fa-solid fa-chart-line fa-xl" style="color: #B5C0D0;"></i>
+            </button>
+            <span>sales</span>
+        </div>
+        <div>
+            <button class="aside-btn">
+                <i class="fa-solid fa-user-tie fa-xl" style="color: #B5C0D0;"></i>
+            </button>
+            <span>employee</span>
+        </div>
+        <div>
+            <button class="aside-btn">
+                <i class="fa-solid fa-user fa-xl" style="color: #B5C0D0;"></i>
+            </button>
+            <span>customer</span>
+        </div>
+        <div>
+            <button class="aside-btn">
+                <i class="fa-solid fa-cart-flatbed fa-xl" style="color: #B5C0D0;"></i>
+            </button>
+            <span>inventory</span>
+        </div>
+        <div>
+            <button class="aside-btn">
+                <i class="fa-solid fa-truck-field fa-xl" style="color: #B5C0D0;"></i>
+            </button>
+            <span>supplier</span>
+        </div>
+        <div>
+            <span id="alerts">1</span>
+            <button class="aside-btn">
+                <i class="fa-solid fa-bell fa-xl" style="color: #B5C0D0;"></i>
+            </button>
+            <span>alerts</span>
+        </div>
+
+    </section>
+    <section class="aside-third-section">
+        <div>
+            <img src="assets/user.jpg" width="28px" height="28px" style="border-radius: 100px"><br>
+            <span>K madusha</span>
+            <i class="fa-solid fa-arrow-right-from-bracket fa-rotate-180 fa-lg" style="color: #ec0909;"></i>
+        </div>
+    </section>
+
+</aside>
+<main>
+    <header>
+        <section class="title-searchbar">
+            <span>Customer Service</span>
+            <div class="search-bar-container">
+                <input type="text" id="customer-search-input" placeholder="Search...">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+            <div class="radio-btns">
+                <label for="cus-option1">
+                    <input type="radio" id="cus-option1" name="customerOption" value="all" checked>All
+                </label>
+                <br>
+                <label for="cus-option2">
+                    <input type="radio" id="cus-option2" name="customerOption" value="normal">Normal
+                </label>
+                <label for="cus-option3">
+                    <input type="radio" id="cus-option3" name="customerOption" value="loyalty">Loyalty
+                </label>
+            </div>
+            <button id="btn-add-customer-popup"><i class="fa-solid fa-user-plus fa-xl"></i></button>
+        </section>
+    </header>
+    <section class="customer-container">
+        <div>
+            <span>Total Customers</span>
+            <span class="cus-count-label"></span>
+        </div>
+        <div>
+            <span>Loyalty Customers</span>
+            <span class="cus-count-label"></span>
+        </div>
+        <div>
+            <span>Normal Customers</span>
+            <span class="cus-count-label"></span>
+        </div>
+    </section>
+    <section class="customer-table-container">
+        <table id="customer-detail-table">
+            <thead>
+            <tr>
+                <th>Name & Id</th>
+                <th>Gender</th>
+                <th>Join Loyalty</th>
+                <th>DOM</th>
+                <th>Address</th>
+                <th>Email</th>
+                <th>contact</th>
+                <th>Recent Purchase</th>
+                <th>Level</th>
+                <th>Points</th>
+                <th class="action-th">Action</th>
+            </tr>
+            </thead>
+            <tbody id="customer-detail-table-body"></tbody>
+        </table>
+    </section>
+    <section class="cus-popup">
+        <section class="cus-save-popup">
+            <button id="btn-cus-popup-remove"><i class="fa-solid fa-xmark fa-xl" style="color: #F0F0F0"></i></button>
+            <span id="cus-popup-header">ADD NEW CUSTOMER</span>
+            <form id="cus-save-form">
+                <div class="cus-form-group">
+                    <label for="customerName">Customer Name:</label><br>
+                    <input type="text" id="customerName" name="customerName" placeholder="kushan madusha" required><br><br>
+                </div>
+                <div class="cus-form-group">
+                    <label for="customerEmail">Email:</label><br>
+                    <input type="email" id="customerEmail" name="customerEmail" placeholder="kushanmadusha62@gmail.com" required><br><br>
+                </div>
+                <div class="cus-form-group">
+                    <label for="cus-gender">Gender:</label><br>
+                    <select id="cus-gender" name="cus-gender" required>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select><br><br>
+                </div>
+                <div class="cus-form-group">
+                    <label for="cus-dob">Date of Birth:</label><br>
+                    <input type="date" id="cus-dob" name="cus-dob" placeholder="20/02/2002" required><br><br>
+                </div>
+                <div class="cus-form-group">
+                    <label for="cus-addressLine1">Address 01 (building no or name) :</label><br>
+                    <input type="text" id="cus-addressLine1" name="cus-addressLine1" placeholder="216" required><br><br>
+                </div>
+                <div class="cus-form-group">
+                    <label for="cus-addressLine2">Address 02 (lane):</label><br>
+                    <input type="text" id="cus-addressLine2" name="cus-addressLine2"
+                           placeholder="medagama dewagala"><br><br>
+                </div>
+                <div class="cus-form-group">
+                    <label for="cus-addressLine3">Address 03 (main city):</label><br>
+                    <input type="text" id="cus-addressLine3" name="cus-addressLine3" placeholder="polonnaruwa" required><br><br>
+                </div>
+                <div class="cus-form-group">
+                    <label for="cus-addressLine4">Address 04 (main state):</label><br>
+                    <input type="text" id="cus-addressLine4" name="cus-addressLine4" placeholder="rajamawatha" required><br><br>
+                </div>
+                <div class="cus-form-group">
+                    <label for="cus-addressLine5">postal code:</label><br>
+                    <input type="text" id="cus-addressLine5" name="cus-addressLine5" placeholder="51000"
+                           required><br><br>
+                </div>
+                <div class="cus-form-group">
+                    <label for="cus-contactNo">Contact No.:</label><br>
+                    <input type="tel" id="cus-contactNo" name="cus-contactNo" pattern="[0-9]{10}"
+                           placeholder="0772461021" required><br><br>
+                </div>
+                <button id="cus-save-update-btn">Save Customer</button>
+            </form>
+        </section>
+    </section>
+</main>
+<script src="lib/jquary.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="controller/CustomerController.js" type="module"></script>
+<script>
+    $(".aside-second-section div:nth-child(2)").on('click',function () {
+        window.location.href = "sale.html"
+    })
+    $(".aside-second-section div:nth-child(3)").on('click',function () {
+        window.location.href = "employee.html"
+    })
+    $(".aside-second-section div:nth-child(4)").on('click',function () {
+        window.location.href = "customer.html"
+    })
+    $(".aside-second-section div:nth-child(5)").on('click',function () {
+        window.location.href = "item.html"
+    })
+    $(".aside-second-section div:nth-child(6)").on('click',function () {
+        window.location.href = "supplier.html"
+    })
+    $(".aside-second-section div:nth-child(7)").on('click',function () {
+        window.location.href = "alert.html"
+    })
+</script>
+</body>
+</html>

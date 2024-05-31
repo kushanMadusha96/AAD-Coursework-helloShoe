@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>inventory</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    <meta name="keyword" content="html">
+    <meta name="description" content="dashboard">
+    <meta name="author" content="il=jse">
+    <meta http-equiv="refresh" content="10000">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="lib/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.min.css">
+</head>
+<body class="body">
+<aside>
+    <section class="aside-first-section">
+        <img src="assets/logo.png" alt="logo">
+    </section>
+
+    <section class="aside-second-section">
+        <div>
+            <button class="aside-btn">
+                <i class="fa-solid fa-house fa-xl" style="color: #B5C0D0;"></i>
+            </button>
+            <span>home</span>
+        </div>
+        <div>
+            <button class="aside-btn">
+                <i class="fa-solid fa-chart-line fa-xl" style="color: #B5C0D0;"></i>
+            </button>
+            <span>sales</span>
+        </div>
+        <div>
+            <button class="aside-btn">
+                <i class="fa-solid fa-user-tie fa-xl" style="color: #B5C0D0;"></i>
+            </button>
+            <span>employee</span>
+        </div>
+        <div>
+            <button class="aside-btn">
+                <i class="fa-solid fa-user fa-xl" style="color: #B5C0D0;"></i>
+            </button>
+            <span>customer</span>
+        </div>
+        <div>
+            <button class="aside-btn">
+                <i class="fa-solid fa-cart-flatbed fa-xl" style="color: #B5C0D0;"></i>
+            </button>
+            <span>inventory</span>
+        </div>
+        <div>
+            <button class="aside-btn">
+                <i class="fa-solid fa-truck-field fa-xl" style="color: #B5C0D0;"></i>
+            </button>
+            <span>supplier</span>
+        </div>
+        <div>
+            <span id="alerts">1</span>
+            <button class="aside-btn">
+                <i class="fa-solid fa-bell fa-xl" style="color: #B5C0D0;"></i>
+            </button>
+            <span>alerts</span>
+        </div>
+
+    </section>
+    <section class="aside-third-section">
+        <div>
+            <img src="assets/user.jpg" width="28px" height="28px" style="border-radius: 100px"><br>
+            <span>K madusha</span>
+            <i class="fa-solid fa-arrow-right-from-bracket fa-rotate-180 fa-lg" style="color: #ec0909;"></i>
+        </div>
+    </section>
+
+</aside>
+<main>
+    <section class="flex-container">
+        <section class="left-container">
+            <section class="title-searchbar">
+                <span>Choose Category</span>
+                <div class="search-bar-container">
+                    <input type="text" class="search-input" placeholder="Search...">
+                    <i class="search-icon fas fa-search"></i>
+                </div>
+                <div>
+                    <button><i class="fa-solid fa-user-plus fa-xl"></i></button>
+                </div>
+            </section>
+            <section class="categories">
+                <div>
+                    <button class="button"></button>
+                    <span>All</span>
+                </div>
+                <div>
+                    <button class="button"></button>
+                    <span>Heel</span>
+                </div>
+                <div>
+                    <button class="button"></button>
+                    <span>Flats</span>
+                </div>
+                <div>
+                    <button class="button"></button>
+                    <span>Wedges</span>
+                </div>
+                <div>
+                    <button class="button"></button>
+                    <span>Flip Flops</span>
+                </div>
+                <div>
+                    <button class="button"></button>
+                    <span>Sandals</span>
+                </div>
+                <div>
+                    <button class="button"></button>
+                    <span>Shoes</span>
+                </div>
+                <div>
+                    <button class="button"></button>
+                    <span>Slippers</span>
+                </div>
+            </section>
+            <section class="items-container">
+                <div class="selected-category">
+                    <span>Hells</span>
+                    <span> (44) items</span>
+                </div>
+                <section class="items">
+                    <div>
+                        <i class="fa-solid fa-circle-plus fa-lg add-item-icon" style="color: #1887dc;"></i>
+                        <button></button>
+                        <span class="item-name">item name</span>
+                        <span class="item-price">10 000</span>
+                        <div>
+                            <span>select size</span>
+                            <span>remain: 10</span>
+                            <div>
+                                <button>5</button>
+                                <button>6</button>
+                                <button>7</button>
+                                <button>8</button>
+                                <button>9</button>
+                                <button>10</button>
+                                <button>11</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-circle-plus fa-lg add-item-icon" style="color: #1887dc;"></i>
+                        <button></button>
+                        <span class="item-name">item name</span>
+                        <span class="item-price">10 000</span>
+                        <div>
+                            <span>select size</span>
+                            <span>remain: 10</span>
+                            <div>
+                                <button>5</button>
+                                <button>6</button>
+                                <button>7</button>
+                                <button>8</button>
+                                <button>9</button>
+                                <button>10</button>
+                                <button>11</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-circle-plus fa-lg add-item-icon" style="color: #1887dc;"></i>
+                        <button></button>
+                        <span class="item-name">item name</span>
+                        <span class="item-price">10 000</span>
+                        <div>
+                            <span>select size</span>
+                            <span>remain: 10</span>
+                            <div>
+                                <button>5</button>
+                                <button>6</button>
+                                <button>7</button>
+                                <button>8</button>
+                                <button>9</button>
+                                <button>10</button>
+                                <button>11</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-circle-plus fa-lg add-item-icon" style="color: #1887dc;"></i>
+                        <button></button>
+                        <span class="item-name">item name</span>
+                        <span class="item-price">10 000</span>
+                        <div>
+                            <span>select size</span>
+                            <span>remain: 10</span>
+                            <div>
+                                <button>5</button>
+                                <button>6</button>
+                                <button>7</button>
+                                <button>8</button>
+                                <button>9</button>
+                                <button>10</button>
+                                <button>11</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-circle-plus fa-lg add-item-icon" style="color: #1887dc;"></i>
+                        <button></button>
+                        <span class="item-name">item name</span>
+                        <span class="item-price">10 000</span>
+                        <div>
+                            <span>select size</span>
+                            <span>remain: 10</span>
+                            <div>
+                                <button>5</button>
+                                <button>6</button>
+                                <button>7</button>
+                                <button>8</button>
+                                <button>9</button>
+                                <button>10</button>
+                                <button>11</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-circle-plus fa-lg add-item-icon" style="color: #1887dc;"></i>
+                        <button></button>
+                        <span class="item-name">item name</span>
+                        <span class="item-price">10 000</span>
+                        <div>
+                            <span>select size</span>
+                            <span>remain: 10</span>
+                            <div>
+                                <button>5</button>
+                                <button>6</button>
+                                <button>7</button>
+                                <button>8</button>
+                                <button>9</button>
+                                <button>10</button>
+                                <button>11</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-circle-plus fa-lg add-item-icon" style="color: #1887dc;"></i>
+                        <button></button>
+                        <span class="item-name">item name</span>
+                        <span class="item-price">10 000</span>
+                        <div>
+                            <span>select size</span>
+                            <span>remain: 10</span>
+                            <div>
+                                <button>5</button>
+                                <button>6</button>
+                                <button>7</button>
+                                <button>8</button>
+                                <button>9</button>
+                                <button>10</button>
+                                <button>11</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-circle-plus fa-lg add-item-icon" style="color: #1887dc;"></i>
+                        <button></button>
+                        <span class="item-name">item name</span>
+                        <span class="item-price">10 000</span>
+                        <div>
+                            <span>select size</span>
+                            <span>remain: 10</span>
+                            <div>
+                                <button>5</button>
+                                <button>6</button>
+                                <button>7</button>
+                                <button>8</button>
+                                <button>9</button>
+                                <button>10</button>
+                                <button>11</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-circle-plus fa-lg add-item-icon" style="color: #1887dc;"></i>
+                        <button></button>
+                        <span class="item-name">item name</span>
+                        <span class="item-price">10 000</span>
+                        <div>
+                            <span>select size</span>
+                            <span>remain: 10</span>
+                            <div>
+                                <button>5</button>
+                                <button>6</button>
+                                <button>7</button>
+                                <button>8</button>
+                                <button>9</button>
+                                <button>10</button>
+                                <button>11</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-circle-plus fa-lg add-item-icon" style="color: #1887dc;"></i>
+                        <button></button>
+                        <span class="item-name">item name</span>
+                        <span class="item-price">10 000</span>
+                        <div>
+                            <span>select size</span>
+                            <span>remain: 10</span>
+                            <div>
+                                <button>5</button>
+                                <button>6</button>
+                                <button>7</button>
+                                <button>8</button>
+                                <button>9</button>
+                                <button>10</button>
+                                <button>11</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-circle-plus fa-lg add-item-icon" style="color: #1887dc;"></i>
+                        <button></button>
+                        <span class="item-name">item name</span>
+                        <span class="item-price">10 000</span>
+                        <div>
+                            <span>select size</span>
+                            <span>remain: 10</span>
+                            <div>
+                                <button>5</button>
+                                <button>6</button>
+                                <button>7</button>
+                                <button>8</button>
+                                <button>9</button>
+                                <button>10</button>
+                                <button>11</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-circle-plus fa-lg add-item-icon" style="color: #1887dc;"></i>
+                        <button></button>
+                        <span class="item-name">item name</span>
+                        <span class="item-price">10 000</span>
+                        <div>
+                            <span>select size</span>
+                            <span>remain: 10</span>
+                            <div>
+                                <button>5</button>
+                                <button>6</button>
+                                <button>7</button>
+                                <button>8</button>
+                                <button>9</button>
+                                <button>10</button>
+                                <button>11</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <section class="right-container">
+            <section class="order-list-header-container">
+                <div class="texts">
+                    <span>Re Supply List</span>
+                    <span>Transaction #030928</span>
+                </div>
+                <div class="order-list-btns">
+                    <button><i class="fa-solid fa-percent fa-lg"></i></button>
+                    <button><i class="fa-regular fa-trash-can fa-lg" style="color: #f42525;"></i></button>
+                    <button><i class="fa-regular fa-bookmark fa-lg"></i></button>
+                </div>
+            </section>
+            <section class="customer-select-container">
+                <div id="customerId-selector">
+                    <input type="text" placeholder="enter customer id">
+                    <button><i class="fa-solid fa-magnifying-glass fa-sm"></i></button>
+<!--                    <button><i class="fa-solid fa-user-tie fa-lg"></i></button>-->
+                </div>
+                <div id="customerId-list">
+                    <button>S001</button>
+                    <button>S001</button>
+                    <button>S001</button>
+                    <button>S001</button>
+                    <button>S001</button>
+                    <button>S001</button>
+                    <button>S001</button>
+                    <button>S001</button>
+                    <button>S001</button>
+                </div>
+            </section>
+            <section class="buying-items-container">
+                <div class="item-card">
+                    <div>
+                        <div class="item-details">
+                            <img class="item-details-img" src="assets/user.jpg" width="50px" height="50px">
+                            <div>
+                                <span class="item-details-name">item name (5)</span>
+                                <span class="item-details-price">2345.00</span>
+                            </div>
+                        </div>
+                        <div class="item-count">
+                            <button><i class="fa-solid fa-plus fa-xs"></i></button>
+                            <span>2</span>
+                            <button><i class="fa-solid fa-minus fa-xs"></i></i></button>
+                        </div>
+                    </div>
+                    <div class="discount-remove-btns">
+                        <button>Discount</button>
+                        <button>Remove</button>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <div>
+                        <div class="item-details">
+                            <img class="item-details-img" src="assets/user.jpg" width="50px" height="50px">
+                            <div>
+                                <span class="item-details-name">item name</span>
+                                <span class="item-details-price">2345.00</span>
+                            </div>
+                        </div>
+                        <div class="item-count">
+                            <button><i class="fa-solid fa-plus fa-xs"></i></button>
+                            <span>2</span>
+                            <button><i class="fa-solid fa-minus fa-xs"></i></i></button>
+                        </div>
+                    </div>
+                    <div class="discount-remove-btns">
+                        <button>Discount</button>
+                        <button>Remove</button>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <div>
+                        <div class="item-details">
+                            <img class="item-details-img" src="assets/user.jpg" width="50px" height="50px">
+                            <div>
+                                <span class="item-details-name">item name</span>
+                                <span class="item-details-price">2345.00</span>
+                            </div>
+                        </div>
+                        <div class="item-count">
+                            <button><i class="fa-solid fa-plus fa-xs"></i></button>
+                            <span>2</span>
+                            <button><i class="fa-solid fa-minus fa-xs"></i></i></button>
+                        </div>
+                    </div>
+                    <div class="discount-remove-btns">
+                        <button>Discount</button>
+                        <button>Remove</button>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <div>
+                        <div class="item-details">
+                            <img class="item-details-img" src="assets/user.jpg" width="50px" height="50px">
+                            <div>
+                                <span class="item-details-name">item name</span>
+                                <span class="item-details-price">2345.00</span>
+                            </div>
+                        </div>
+                        <div class="item-count">
+                            <button><i class="fa-solid fa-plus fa-xs"></i></button>
+                            <span>2</span>
+                            <button><i class="fa-solid fa-minus fa-xs"></i></i></button>
+                        </div>
+                    </div>
+                    <div class="discount-remove-btns">
+                        <button>Discount</button>
+                        <button>Remove</button>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <div>
+                        <div class="item-details">
+                            <img class="item-details-img" src="assets/user.jpg" width="50px" height="50px">
+                            <div>
+                                <span class="item-details-name">item name</span>
+                                <span class="item-details-price">2345.00</span>
+                            </div>
+                        </div>
+                        <div class="item-count">
+                            <button><i class="fa-solid fa-plus fa-xs"></i></button>
+                            <span>2</span>
+                            <button><i class="fa-solid fa-minus fa-xs"></i></i></button>
+                        </div>
+                    </div>
+                    <div class="discount-remove-btns">
+                        <button>Discount</button>
+                        <button>Remove</button>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <div>
+                        <div class="item-details">
+                            <img class="item-details-img" src="assets/user.jpg" width="50px" height="50px">
+                            <div>
+                                <span class="item-details-name">item name</span>
+                                <span class="item-details-price">2345.00</span>
+                            </div>
+                        </div>
+                        <div class="item-count">
+                            <button><i class="fa-solid fa-plus fa-xs"></i></button>
+                            <span>2</span>
+                            <button><i class="fa-solid fa-minus fa-xs"></i></i></button>
+                        </div>
+                    </div>
+                    <div class="discount-remove-btns">
+                        <button>Discount</button>
+                        <button>Remove</button>
+                    </div>
+                </div>
+            </section>
+            <section class="total-fee-container">
+                <div class="amount-title">
+                    <span>Sub Total</span>
+                    <span>23000</span>
+                </div>
+                <div class="amount-title">
+                    <span>Discount</span>
+                    <span>5%</span>
+                </div>
+                <div class="amount-title">
+                    <span>Total</span>
+                    <span>23000</span>
+                </div>
+            </section>
+            <button id="total-btn">
+                <i class="fa-solid fa-money-bills fa-xl" style="color: #f9fafa;margin-right: 10px"></i>
+                Pay Rs 12000.00
+            </button>
+        </section>
+    </section>
+</main>
+<script src="lib/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+<script src="lib/fontawesome/fontawesome-free-6.4.2-web/js/all.min.js"></script>
+<script src="lib/jquary.min.js"></script>
+<script>
+    $(".aside-second-section div:nth-child(2)").on('click',function () {
+        window.location.href = "sale.html"
+    })
+    $(".aside-second-section div:nth-child(3)").on('click',function () {
+        window.location.href = "employee.html"
+    })
+    $(".aside-second-section div:nth-child(4)").on('click',function () {
+        window.location.href = "customer.html"
+    })
+    $(".aside-second-section div:nth-child(5)").on('click',function () {
+        window.location.href = "item.html"
+    })
+    $(".aside-second-section div:nth-child(6)").on('click',function () {
+        window.location.href = "supplier.html"
+    })
+    $(".aside-second-section div:nth-child(7)").on('click',function () {
+        window.location.href = "alert.html"
+    })
+</script>
+<script src="controller/indexController.js" type="module"></script>
+</body>
+</html>

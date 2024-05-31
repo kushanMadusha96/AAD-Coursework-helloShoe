@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dashboard</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    <meta name="keyword" content="html">
+    <meta name="description" content="dashboard">
+    <meta name="author" content="il=jse">
+    <meta http-equiv="refresh" content="10000">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/sale.css">
+    <link rel="stylesheet" href="lib/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.min.css">
+</head>
+<body>
+<aside>
+    <section class="aside-first-section">
+        <img src="assets/logo.png" alt="logo">
+    </section>
+
+    <section class="aside-second-section">
+        <div>
+            <button class="aside-btn">
+                <i class="fa-solid fa-house fa-xl" style="color: #B5C0D0;"></i>
+            </button>
+            <span>home</span>
+        </div>
+        <div>
+            <button class="aside-btn">
+                <i class="fa-solid fa-chart-line fa-xl" style="color: #B5C0D0;"></i>
+            </button>
+            <span>sales</span>
+        </div>
+        <div>
+            <button class="aside-btn">
+                <i class="fa-solid fa-user-tie fa-xl" style="color: #B5C0D0;"></i>
+            </button>
+            <span>employee</span>
+        </div>
+        <div>
+            <button class="aside-btn">
+                <i class="fa-solid fa-user fa-xl" style="color: #B5C0D0;"></i>
+            </button>
+            <span>customer</span>
+        </div>
+        <div>
+            <button class="aside-btn">
+                <i class="fa-solid fa-cart-flatbed fa-xl" style="color: #B5C0D0;"></i>
+            </button>
+            <span>inventory</span>
+        </div>
+        <div>
+            <button class="aside-btn">
+                <i class="fa-solid fa-truck-field fa-xl" style="color: #B5C0D0;"></i>
+            </button>
+            <span>supplier</span>
+        </div>
+        <div>
+            <span id="alerts">1</span>
+            <button class="aside-btn">
+                <i class="fa-solid fa-bell fa-xl" style="color: #B5C0D0;"></i>
+            </button>
+            <span>alerts</span>
+        </div>
+
+    </section>
+    <section class="aside-third-section">
+        <div>
+            <img src="assets/user.jpg" width="28px" height="28px" style="border-radius: 100px"><br>
+            <span>K madusha</span>
+            <i class="fa-solid fa-arrow-right-from-bracket fa-rotate-180 fa-lg" style="color: #ec0909;"></i>
+        </div>
+    </section>
+
+</aside>
+<main>
+    <section class="user-date">
+        <span>2002/08/27</span>
+        <span>Kushan Madusha,</span>
+    </section>
+    <section class="today-sale-sum">
+        <div>
+            <span>Today's Sales Summary,</span>
+            <input type="date" name="datepicker">
+        </div>
+        <section class="sales-sum-square">
+            <div class="sale-square">
+                <i class="fa-solid fa-comments-dollar fa-2xl" style="color: #FF6500;"></i>
+                <span class="count">Rs 12000</span>
+                <span class="sum-title">Total Sales</span>
+            </div>
+            <div class="sale-square">
+                <i class="fa-solid fa-hand-holding-dollar fa-2xl" style="color: #BC7FCD;"></i>
+                <span class="count">Rs 12000</span>
+                <span class="sum-title">Total Profit</span>
+            </div>
+            <div class="sale-square">
+                <i class="fa-solid fa-chart-simple fa-2xl" style="color: #704264;"></i>
+                <span class="count">Rs 12000</span>
+                <span class="sum-title">Most Sale Item</span>
+            </div>
+            <div class="sale-square">
+                <i class="fa-solid fa-circle-check fade fa-2xl" style="color: #FC819E;"></i>
+                <span class="count">Rs 12000</span>
+                <span class="sum-title">Total Orders</span>
+            </div>
+            <div class="sale-square">
+                <i class="fa-solid fa-layer-group fa-2xl" style="color: #B99470;"></i>
+                <span class="count">Rs 12000</span>
+                <span class="sum-title">Product Category</span>
+            </div>
+            <div class="sale-square">
+                <i class="fa-solid fa-handshake fa-2xl" style="color: #4793AF;"></i>
+                <span class="count">Rs 12000</span>
+                <span class="sum-title">New Customers</span>
+            </div>
+        </section>
+    </section>
+    <section class="charts">
+        <div>
+            <span>Sales By Category,</span>
+            <div class="pie-chart">
+                <div class="slice" id="slice1"></div>
+                <div class="slice" id="slice2"></div>
+                <div class="slice" id="slice3"></div>
+                <div class="slice" id="slice4"></div>
+                <div class="slice" id="slice5"></div>
+            </div>
+            <div class="center-circle"></div>
+            <div class="item-name-color">
+                <div></div>
+                <span>Red Shoe</span>
+            </div>
+        </div>
+        <div>
+        </div>
+        <div class="top10-cus">
+            <span>Today's Top 10 Customers,</span>
+            <div>
+                <div>
+                    <span>#</span>
+                    <span>Name</span>
+                    <span>Points</span>
+                </div>
+                <div class="cus-row">
+                    <span>01</span>
+                    <span>kushan madusha</span>
+                    <span>2000</span>
+                </div>
+                <div class="cus-row">
+                    <span>02</span>
+                    <span>kushan madusha</span>
+                    <span>2000</span>
+                </div>
+                <div class="cus-row">
+                    <span>03</span>
+                    <span>kushan madusha</span>
+                    <span>2000</span>
+                </div>
+                <div class="cus-row">
+                    <span>04</span>
+                    <span>kushan madusha</span>
+                    <span>2000</span>
+                </div>
+                <div class="cus-row">
+                    <span>05</span>
+                    <span>kushan madusha</span>
+                    <span>2000</span>
+                </div>
+                <div class="cus-row">
+                    <span>06</span>
+                    <span>kushan madusha</span>
+                    <span>2000</span>
+                </div>
+                <div class="cus-row">
+                    <span>07</span>
+                    <span>kushan madusha</span>
+                    <span>2000</span>
+                </div>
+                <div class="cus-row">
+                    <span>08</span>
+                    <span>kushan madusha</span>
+                    <span>2000</span>
+                </div>
+                <div class="cus-row">
+                    <span>09</span>
+                    <span>kushan madusha</span>
+                    <span>2000</span>
+                </div>
+                <div class="cus-row">
+                    <span>10</span>
+                    <span>kushan madusha</span>
+                    <span>2000</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="lib/jquary.min.js"></script>
+<script>
+    $(".aside-second-section div:nth-child(2)").on('click',function () {
+        window.location.href = "sale.html"
+    })
+    $(".aside-second-section div:nth-child(3)").on('click',function () {
+        window.location.href = "employee.html"
+    })
+    $(".aside-second-section div:nth-child(4)").on('click',function () {
+        window.location.href = "customer.html"
+    })
+    $(".aside-second-section div:nth-child(5)").on('click',function () {
+        window.location.href = "item.html"
+    })
+    $(".aside-second-section div:nth-child(6)").on('click',function () {
+        window.location.href = "supplier.html"
+    })
+    $(".aside-second-section div:nth-child(7)").on('click',function () {
+        window.location.href = "alert.html"
+    })
+</script>
+</body>
+</html>

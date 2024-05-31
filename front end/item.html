@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Item</title>
+    <link rel="stylesheet" href="css/item.css">
+    <link rel="stylesheet" href="lib/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.min.css">
+</head>
+<body>
+<aside>
+    <section class="aside-first-section">
+        <img src="assets/logo.png" alt="logo">
+    </section>
+    <section class="aside-second-section">
+        <div>
+            <button class="aside-btn">
+                <i class="fa-solid fa-house fa-xl" style="color: #B5C0D0;"></i>
+            </button>
+            <span>home</span>
+        </div>
+        <div>
+            <button class="aside-btn">
+                <i class="fa-solid fa-chart-line fa-xl" style="color: #B5C0D0;"></i>
+            </button>
+            <span>sales</span>
+        </div>
+        <div>
+            <button class="aside-btn">
+                <i class="fa-solid fa-user-tie fa-xl" style="color: #B5C0D0;"></i>
+            </button>
+            <span>employee</span>
+        </div>
+        <div>
+            <button class="aside-btn">
+                <i class="fa-solid fa-user fa-xl" style="color: #B5C0D0;"></i>
+            </button>
+            <span>customer</span>
+        </div>
+        <div>
+            <button class="aside-btn">
+                <i class="fa-solid fa-cart-flatbed fa-xl" style="color: #B5C0D0;"></i>
+            </button>
+            <span>inventory</span>
+        </div>
+        <div>
+            <button class="aside-btn">
+                <i class="fa-solid fa-truck-field fa-xl" style="color: #B5C0D0;"></i>
+            </button>
+            <span>supplier</span>
+        </div>
+        <div>
+            <span id="alerts">1</span>
+            <button class="aside-btn">
+                <i class="fa-solid fa-bell fa-xl" style="color: #B5C0D0;"></i>
+            </button>
+            <span>alerts</span>
+        </div>
+
+    </section>
+    <section class="aside-third-section">
+        <div>
+            <img src="assets/user.jpg" width="28px" height="28px" style="border-radius: 100px"><br>
+            <span>K madusha</span>
+            <i class="fa-solid fa-arrow-right-from-bracket fa-rotate-180 fa-lg" style="color: #ec0909;"></i>
+        </div>
+    </section>
+
+</aside>
+<main>
+    <header>
+        <section class="title-searchbar">
+            <span>Item Service</span>
+            <div class="search-bar-container">
+                <input type="text" id="item-search-input" placeholder="Search...">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+            <button id="btn-add-item-popup"><i class="fa-solid fa-user-plus fa-xl"></i></button>
+        </section>
+    </header>
+    <section class="item-add-update-container">
+        <div>
+            <img src="assets/shoe.webp" width="105%" height="105%" id="itemImg">
+            <input type="file" id="item-save-fileInput" style="display: none;">
+            <i class="fa-solid fa-camera fa-lg" style="color: #7a7c7f;cursor: pointer"
+               onclick="document.getElementById('item-save-fileInput').click()"></i>
+        </div>
+        <div>
+            <button id="btn-remove-item-popup"><i
+                    class="fa-solid fa-circle-xmark fa-xl"></i></button>
+            <div class="item-form-group">
+                <label for="itemName">Item Name:</label><br>
+                <input type="text" id="itemName" name="itemName" placeholder="red shoe" required><br><br>
+            </div>
+            <div class="item-form-group">
+                <label for="select-gender">Select Gender:</label><br>
+                <select id="select-gender" name="select-gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="item-form-group">
+                <label for="select-occasion">Select Occasion:</label><br>
+                <select id="select-occasion" name="select-occasion" required>
+                    <optgroup label="shoes">
+                        <option value="Formal">Formal</option>
+                        <option value="Casual">Casual</option>
+                        <option value="Industrial">Industrial</option>
+                        <option value="Sport">Sport</option>
+                    </optgroup>
+                    <optgroup label="others">
+                        <option value="Black Polish">Black Polish</option>
+                        <option value="Brown Polish">Brown Polish</option>
+                        <option value="Dark Brown Polish">Dark Brown Polish</option>
+                        <option value="Half Socks">Half Socks"</option>
+                        <option value="Dull Socks">Dull Socks</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="item-form-group">
+                <label for="select-verity">Select Verity:</label><br>
+                <select id="select-verity" name="select-verity" required>
+                    <option value="Heels">Heels</option>
+                    <option value="Flats">Flats</option>
+                    <option value="Wedges">Wedges</option>
+                    <option value="Flip Flops">Flip Flops</option>
+                    <option value="Sandals">Sandals</option>
+                    <option value="Shoes">Shoes</option>
+                    <option value="Slipers">Slipers</option>
+                </select>
+            </div>
+            <div class="item-form-group">
+                <label for="unitPriceBuy">Buying Price(1):</label><br>
+                <input type="text" id="unitPriceBuy" name="unitPriceBuy" placeholder="200" required><br><br>
+            </div>
+            <div class="item-form-group">
+                <label for="profitMargin">Profit Margin(%):</label><br>
+                <input type="text" id="profitMargin" name="profitMargin" placeholder="10" required><br><br>
+            </div>
+            <div class="item-form-group">
+                <label for="expectedProfit">Expected Profit:</label><br>
+                <input type="text" id="expectedProfit" name="expectedProfit" placeholder="100" required><br><br>
+            </div>
+            <div class="item-form-group">
+                <label for="unitPriceSell">Selling Price(1):</label><br>
+                <input type="text" id="unitPriceSell" name="unitPriceSell" placeholder="300" required><br><br>
+            </div>
+            <div class="supplier-selector">
+                <div>
+                    <label for="supplierId">Select Supplier:</label>
+                    <input type="text" id="supplierId" placeholder="enter supplier id">
+                    <button><i class="fa-solid fa-magnifying-glass fa-sm"></i></button>
+                </div>
+                <div id="supplierId-list">
+                    <!--                    supplier id buttons added dynamically-->
+                </div>
+            </div>
+            <div class="item-form-group">
+                <label for="supplierName">Supplier Name:</label><br>
+                <input type="text" id="supplierName" name="supplierName" placeholder="Ishan Denuwara" required><br><br>
+            </div>
+            <div class="item-form-group">
+                <label for="itemCode">Item Code:</label><br>
+                <input type="text" id="itemCode" name="itemCode" placeholder="SWE002" required><br><br>
+            </div>
+            <div>
+                <button id="item-update-btn">Udate Item</button>
+                <button id="item-remove-btn">Remove</button>
+                <button id="item-save-btn">
+                    ADD ITEM
+                </button>
+            </div>
+
+        </div>
+    </section>
+    <section class="item-table-container">
+        <table id="item-detail-table">
+            <thead>
+            <tr>
+                <th>Preview</th>
+                <th>Item Name & Id</th>
+                <th>supplier Name & Id</th>
+                <th>Category</th>
+                <th>Size</th>
+                <th>Remain QTY</th>
+                <th>Buying Price</th>
+                <th>Selling Price</th>
+                <th>Expected Profit</th>
+                <th>Profit Margin(%)</th>
+                <th>Status</th>
+                <th class="action-th">Remove</th>
+            </tr>
+            </thead>
+            <tbody id="item-detail-table-body">
+            <!--            <tr>-->
+            <!--                <td><img src="assets/shoe.webp" width="50px" height="50px" style="border-radius: 5px"></td>-->
+            <!--                <td>-->
+            <!--                    <span style="font-family: Arial;font-size: 14px;font-weight: bold">black shoe</span><br>-->
+            <!--                    <span style="font-family: Arial;font-size: 10px;font-weight: bold">(SWE001)</span>-->
+            <!--                </td>-->
+            <!--                <td>SWM</td>-->
+            <!--                <td>-->
+            <!--                    <button style="border-radius: 50px;border: none">5</button>-->
+            <!--                    <button style="border-radius: 50px;border: none">6</button>-->
+            <!--                    <button style="border-radius: 50px;border: none">7</button>-->
+            <!--                    <button style="border-radius: 50px;border: none">8</button>-->
+            <!--                    <button style="border-radius: 50px;border: none">9</button>-->
+            <!--                    <button style="border-radius: 50px;border: none">10</button>-->
+            <!--                    <button style="border-radius: 50px;border: none">11</button>-->
+            <!--                </td>-->
+            <!--                <td>20</td>-->
+            <!--                <td>30</td>-->
+            <!--                <td>40</td>-->
+            <!--                <td>10</td>-->
+            <!--                <td>2%</td>-->
+            <!--                <td>low</td>-->
+            <!--                <td class="action-td">-->
+            <!--                    <button><i class="fa-solid fa-trash-can fa-lg" style="color: #f50529;"></i></button>-->
+            <!--                </td>-->
+            <!--            </tr>-->
+            </tbody>
+        </table>
+    </section>
+</main>
+<script src="lib/jquary.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="controller/ItemController.js" type="module"></script>
+</body>
+</html>
